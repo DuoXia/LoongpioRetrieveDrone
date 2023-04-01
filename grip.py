@@ -30,7 +30,7 @@ try:
             bus.write_i2c_block_data(address,values2[0],values2[1:length2])
             time.sleep(0.05)
         for x in range (0,2):
-            time.sleep(1.01)        #保护用，别动，已经烧了一个了
+            time.sleep(1.01)
         for k in range(0,30):
             values3[3] = (60 - k)
             bus.write_i2c_block_data(address,values3[0],values2[1:length3])
